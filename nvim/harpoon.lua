@@ -8,12 +8,14 @@ end, { desc = 'harpoon add' })
 vim.keymap.set('n', '<leader>hm', function()
   harpoon.ui:toggle_quick_menu(harpoon:list())
 end, { desc = 'harpoon menu' })
+
 vim.keymap.set('n', '<leader>hp', function()
   harpoon:list():prev()
 end, { desc = 'harpoon prev' })
 vim.keymap.set('n', '<leader>hn', function()
   harpoon:list():next()
 end, { desc = 'harpoon next' })
+
 vim.keymap.set('n', '<leader>1', function()
   harpoon:list():select(1)
 end, { desc = 'harpoon file' })
@@ -28,5 +30,6 @@ vim.keymap.set('n', '<leader>4', function()
 end, { desc = 'harpoon file' })
 
 return {}
+
 
 
